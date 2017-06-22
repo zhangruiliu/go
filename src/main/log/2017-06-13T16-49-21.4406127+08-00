@@ -1,0 +1,94 @@
+{DB0:{Driver:sqlite3 Connection:./../database/person23.db Connection2:./../database/person.db Connection3:./../database/idcard.db} Static:E:/dnapersondb/WebRoot LogPath:log Port:8080 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Local:http://127.0.0.1:8080 Public:http://192.168.1.12:6666 Mode:local Server:650000 Updatedb:http://127.0.0.1:9999/api/downloaddb/}
+Listening on 8080....
+[Golang]2017-06-13 16:49:31.0241609 +0800 CST | 304 |  1ms | 127.0.0.1:8080 | GET | /js/dict.js 
+[Golang]2017-06-13 16:49:39.0186181 +0800 CST | 200 |  4.0002ms | 127.0.0.1:8080 | POST | /api/Getconfig 
+[Golang]2017-06-13 17:19:24.5677457 +0800 CST | 304 |  0s | 127.0.0.1:8080 | GET | /login.html 
+[Golang]2017-06-13 17:19:24.5837466 +0800 CST | 304 |  1ms | 127.0.0.1:8080 | GET | /css/login.css 
+[Golang]2017-06-13 17:19:24.5857467 +0800 CST | 304 |  0s | 127.0.0.1:8080 | GET | /images/jinghui.png 
+[Golang]2017-06-13 17:19:30.2640715 +0800 CST | 200 |  3.0002ms | 127.0.0.1:8080 | POST | /api/Login 
+[Golang]2017-06-13 17:19:30.2850727 +0800 CST | 200 |  150.0086ms | 127.0.0.1:8080 | GET | /lurujiemian.html 
+[Golang]2017-06-13 17:19:30.4570825 +0800 CST | 304 |  1.0001ms | 127.0.0.1:8080 | GET | /css/index.css 
+[Golang]2017-06-13 17:19:30.4600827 +0800 CST | 304 |  2.0001ms | 127.0.0.1:8080 | GET | /js/jquery.params.js 
+[Golang]2017-06-13 17:19:30.4620828 +0800 CST | 304 |  1.0001ms | 127.0.0.1:8080 | GET | /js/My97DatePicker/WdatePicker.js 
+[Golang]2017-06-13 17:19:30.482084 +0800 CST | 304 |  2.0001ms | 127.0.0.1:8080 | GET | /js/My97DatePicker/skin/WdatePicker.css 
+[Golang]2017-06-13 17:19:30.5320868 +0800 CST | 200 |  1.0001ms | 127.0.0.1:8080 | POST | /api/Getconfig 
+[Golang]2017-06-13 17:19:30.5320868 +0800 CST | 200 |  2.0001ms | 127.0.0.1:8080 | POST | /api/GetConfigvalue 
+[Golang]2017-06-13 17:19:30.5770894 +0800 CST | 304 |  2.0001ms | 127.0.0.1:8080 | GET | /js/My97DatePicker/My97DatePicker.htm 
+[Golang]2017-06-13 17:19:30.5980906 +0800 CST | 304 |  3.0002ms | 127.0.0.1:8080 | GET | /js/My97DatePicker/config.js 
+[Golang]2017-06-13 17:19:30.6010908 +0800 CST | 304 |  7.0004ms | 127.0.0.1:8080 | GET | /js/My97DatePicker/calendar.js 
+[Golang]2017-06-13 17:19:30.6120914 +0800 CST | 304 |  3.0002ms | 127.0.0.1:8080 | GET | /js/My97DatePicker/lang/zh-cn.js 
+[Golang]2017-06-13 17:19:30.6140915 +0800 CST | 304 |  1.0001ms | 127.0.0.1:8080 | GET | /js/My97DatePicker/skin/default/datepicker.css 
+[Golang]2017-06-13 17:19:30.6190918 +0800 CST | 304 |  2.0001ms | 127.0.0.1:8080 | GET | /js/My97DatePicker/skin/whyGreen/datepicker.css 
+[Golang]2017-06-13 17:19:30.6520937 +0800 CST | 304 |  1ms | 127.0.0.1:8080 | GET | /js/My97DatePicker/skin/default/img.gif 
+dial tcp 192.168.1.12:6666: connectex: No connection could be made because the target machine actively refused it.
+goroutine 27 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb340a0, 0xc0423837e0, 0xc04238e200)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x8575c0, 0xc0423e2550)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc04237bcb0, 0xb2f4e0, 0xc0423e2550)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).Geturlisornotonline(0xc04237bcb0)
+	E:/dnapersondb/src/service/card/card.go:755 +0x18d
+reflect.Value.call(0x8adca0, 0xc04237bcb0, 0x3213, 0x8bb5b8, 0x4, 0xc04220b990, 0x0, 0x0, 0xc0421f82d0, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8adca0, 0xc04237bcb0, 0x3213, 0xc04220b990, 0x0, 0x0, 0xc04237bcb0, 0x3213, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb340a0, 0xc0423837e0, 0xc04238e200, 0xc0423837c0, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb340a0, 0xc0423837e0, 0xc04238e200, 0xc0423837c0, 0x1, 0x1)
+[Golang]2017-06-13 17:19:30.536087 +0800 CST | 200 |  1.0350592s | 127.0.0.1:8080 | POST | /api/Geturlisornotonline 
+dial tcp 192.168.1.12:6666: connectex: No connection could be made because the target machine actively refused it.
+goroutine 27 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb340a0, 0xc0423de660, 0xc0423d0500)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x8575c0, 0xc0423e2730)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc0423da870, 0xb2f4e0, 0xc0423e2730)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).Geturlisornotonline(0xc0423da870)
+	E:/dnapersondb/src/service/card/card.go:755 +0x18d
+reflect.Value.call(0x8adca0, 0xc0423da870, 0x3213, 0x8bb5b8, 0x4, 0xc04220b990, 0x0, 0x0, 0xc0423f6050, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8adca0, 0xc0423da870, 0x3213, 0xc04220b990, 0x0, 0x0, 0xc0423da870, 0x3213, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb340a0, 0xc0423de660, 0xc0423d0500, 0xc0423de640, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb340a0, 0xc0423de660, 0xc0423d0500, 0xc0423de640, 0x1, 0x1)
+[Golang]2017-06-13 17:19:36.5774326 +0800 CST | 200 |  1.0060575s | 127.0.0.1:8080 | POST | /api/Geturlisornotonline 
+dial tcp 192.168.1.12:6666: connectex: No connection could be made because the target machine actively refused it.
+goroutine 27 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb340a0, 0xc0423de9e0, 0xc0423d0700)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x8575c0, 0xc0423903c0)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc0423dabd0, 0xb2f4e0, 0xc0423903c0)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).Geturlisornotonline(0xc0423dabd0)
+	E:/dnapersondb/src/service/card/card.go:755 +0x18d
+reflect.Value.call(0x8adca0, 0xc0423dabd0, 0x3213, 0x8bb5b8, 0x4, 0xc04220b990, 0x0, 0x0, 0xc0423f60a0, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8adca0, 0xc0423dabd0, 0x3213, 0xc04220b990, 0x0, 0x0, 0xc0423dabd0, 0x3213, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb340a0, 0xc0423de9e0, 0xc0423d0700, 0xc0423de9c0, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb340a0, 0xc0423de9e0, 0xc0423d0700, 0xc0423de9c0, 0x1, 0x1)
+[Golang]2017-06-13 17:19:42.5897765 +0800 CST | 200 |  1.0020573s | 127.0.0.1:8080 | POST | /api/Geturlisornotonline 
+dial tcp 192.168.1.12:6666: connectex: No connection could be made because the target machine actively refused it.
+goroutine 27 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb340a0, 0xc0423dec40, 0xc0423d0800)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x8575c0, 0xc042390550)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc0423dade0, 0xb2f4e0, 0xc042390550)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).Geturlisornotonline(0xc0423dade0)
+	E:/dnapersondb/src/service/card/card.go:755 +0x18d
+reflect.Value.call(0x8adca0, 0xc0423dade0, 0x3213, 0x8bb5b8, 0x4, 0xc04220b990, 0x0, 0x0, 0xc0423f60d0, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8adca0, 0xc0423dade0, 0x3213, 0xc04220b990, 0x0, 0x0, 0xc0423dade0, 0x3213, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb340a0, 0xc0423dec40, 0xc0423d0800, 0xc0423dec20, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb340a0, 0xc0423dec40, 0xc0423d0800, 0xc0423dec20, 0x1, 0x1)
+[Golang]2017-06-13 17:19:48.5981201 +0800 CST | 200 |  1.014058s | 127.0.0.1:8080 | POST | /api/Geturlisornotonline 

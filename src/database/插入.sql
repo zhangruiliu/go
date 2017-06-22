@@ -1,0 +1,1 @@
+insert into idcard(id_card_no,person_name,gender,race,adress,birth_datetime) values('320682199312317959','爱吃','男','汉族','南通',datetime('2016-06-07 11:01:21'))

@@ -1,0 +1,10 @@
+{DB0:{Driver:sqlite3 Connection:./../database/person23.db Connection2:./../database/person.db Connection3:./../database/allperson.db} Static:E:/dnapersondb/WebRoot LogPath:log Port:8080 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Local:http://127.0.0.1:8080 Public:http://192.168.1.12:6666 Mode:local Server:650000 Updatedb:http://127.0.0.1:9997/api/downloaddb/ Getcheckserver:http://127.0.0.1:9997/api/getcheckserver}
+Listening on 8080....
+[Golang]2017-06-15 17:13:47.9200852 +0800 CST | 304 |  1ms | 127.0.0.1:8080 | GET | /selectApi.html 
+[Golang]2017-06-15 17:14:07.3731978 +0800 CST | 200 |  29.0017ms | 127.0.0.1:8080 | POST | /api/Selectperandsamp 
+[Golang]2017-06-15 17:14:17.8027944 +0800 CST | 200 |  1ms | 127.0.0.1:8080 | POST | /api/Selectperandsamp 
+[Golang]2017-06-15 17:14:24.6581865 +0800 CST | 200 |  1ms | 127.0.0.1:8080 | POST | /api/Selectperandsamp 
+[Golang]2017-06-15 17:14:25.5142355 +0800 CST | 200 |  1ms | 127.0.0.1:8080 | POST | /api/Selectperandsamp 
+[Golang]2017-06-15 17:14:25.9862625 +0800 CST | 200 |  1ms | 127.0.0.1:8080 | POST | /api/Selectperandsamp 
+[Golang]2017-06-15 17:14:29.8824853 +0800 CST | 200 |  23.0013ms | 127.0.0.1:8080 | POST | /api/Selectperandsamp 
+[Golang]2017-06-15 17:14:31.7695932 +0800 CST | 200 |  21.0012ms | 127.0.0.1:8080 | POST | /api/Selectperandsamp 

@@ -1,0 +1,27 @@
+﻿{
+    "static": "D:/dnapersondb/WebRoot",
+    "log-path": "log",
+    "mode":"local",
+    "port": "9999",
+    "collect-agency-code":"650000123654",
+    "collect-agency-name":"新疆公安局",
+    "code":"001",
+    "db0": {
+        "driver":"sqlite3",
+        "connection":"./../database/person23.db",
+        //查重
+        "connection2":"./../database/person.db",
+        //户籍库
+        "connection3":"./../database/idcard.db"
+    //    "driver": "mysql",
+	//    "connection": "root:zdb15@tcp(192.168.1.66:3306)/ht0611?charset=utf8&parseTime=true&loc=Local"
+            // "connection":"root:root@tcp(192.168.1.19:3306)/perinfo?charset=utf8&parseTime=true&loc=Local"
+    },
+    "updatedb":"http://127.0.0.1:9999/api/downloaddb/",
+    "lims1-login-url": "http://127.0.0.1:7070/dnalims/svc/login",
+    "sql-tmpl-path": "Sqls",
+    "public":"http://192.168.1.12:6666",
+    "local":"http://127.0.0.1:9999",
+    "server":"650000"
+
+}

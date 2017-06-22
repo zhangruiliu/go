@@ -1,0 +1,21 @@
+{DB0:{Driver:sqlite3 Connection:./../database/person23.db Connection2:./../database/person23.db Connection3:./../database/allperson.db} Static:E:/dnapersondb/WebRoot LogPath:log Port:8080 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Local:http://127.0.0.1:8080 Public:http://127.0.0.1:8088 Mode:local Server:650000 Updatedb:http://127.0.0.1:9999/api/downloaddb/}
+Listening on 8080....
+remove ./../database/person23.db: The process cannot access the file because it is being used by another process.
+goroutine 8 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb340a0, 0xc04218e6a0, 0xc042101100)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x845ea0, 0xc04203ea20)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc04218dfb0, 0xb2fd60, 0xc04203ea20)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).Getcheckpersonfile(0xc04218dfb0)
+	E:/dnapersondb/src/service/card/card.go:1144 +0x524
+reflect.Value.call(0x8ae6c0, 0xc04218dfb0, 0x2613, 0x8bc218, 0x4, 0xc04202b990, 0x0, 0x0, 0xc042004bf0, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8ae6c0, 0xc04218dfb0, 0x2613, 0xc04202b990, 0x0, 0x0, 0xc04218dfb0, 0x2613, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb340a0, 0xc04218e6a0, 0xc042101100, 0xc04218e680, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb340a0, 0xc04218e6a0, 0xc042101100, 0xc04218e680, 0x1, 0x1)
+
+[Golang]2017-06-12 15:39:32.1512017 +0800 CST | 200 |  9.108521s | 127.0.0.1:8080 | POST | /api/Getcheckpersonfile 

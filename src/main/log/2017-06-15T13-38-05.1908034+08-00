@@ -1,0 +1,42 @@
+{DB0:{Driver:sqlite3 Connection:./../database/person23.db Connection2:./../database/person.db Connection3:./../database/idcard.db} Static:E:/dnapersondb/WebRoot LogPath:log Port:8080 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Local:http://127.0.0.1:8080 Public:http://192.168.1.12:6666 Mode:local Server:650000 Updatedb:http://127.0.0.1:9999/api/downloaddb/}
+Listening on 8080....
+[Golang]2017-06-15 13:38:42.2609237 +0800 CST | 200 |  4.0002ms | 127.0.0.1:8080 | GET | /api/Getconfig 
+record not found
+goroutine 22 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb674a0, 0xc04221c640, 0xc042000f00)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xef
+panic(0x8e8940, 0xc0421184b0)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc042219380, 0xb62520, 0xc0421184b0)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).Getphoto(0xc042219380)
+	E:/dnapersondb/src/service/card/card.go:1482 +0x2e8
+reflect.Value.call(0x952f00, 0xc042219380, 0x2e13, 0x960818, 0x4, 0xc04202d820, 0x0, 0x0, 0xc042004698, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x952f00, 0xc042219380, 0x2e13, 0xc04202d820, 0x0, 0x0, 0xc042219380, 0x2e13, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb674a0, 0xc04221c640, 0xc042000f00, 0xc04221c620, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x5a0
+web/middleware.RecoveryMiddleware.func1(0xb674a0, 0xc04221c640, 0xc042000f00, 0xc04221c620, 0x1, 0x1)
+	E:/dnape
+[Golang]2017-06-15 13:39:03.8461583 +0800 CST | 200 |  51.593951s | 127.0.0.1:8080 | GET | /api/Getphoto 
+record not found
+goroutine 22 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb674a0, 0xc042232060, 0xc04222c000)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xef
+panic(0x8e8940, 0xc0421184b0)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc04222a0c0, 0xb62520, 0xc0421184b0)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).Getphoto(0xc04222a0c0)
+	E:/dnapersondb/src/service/card/card.go:1482 +0x2e8
+reflect.Value.call(0x952f00, 0xc04222a0c0, 0x2e13, 0x960818, 0x4, 0xc04202d820, 0x0, 0x0, 0xc04223c010, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x952f00, 0xc04222a0c0, 0x2e13, 0xc04202d820, 0x0, 0x0, 0xc04222a0c0, 0x2e13, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb674a0, 0xc042232060, 0xc04222c000, 0xc042232040, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x5a0
+web/middleware.RecoveryMiddleware.func1(0xb674a0, 0xc042232060, 0xc04222c000, 0xc042232040, 0x1, 0x1)
+	E:/dnape
+[Golang]2017-06-15 13:40:00.3443898 +0800 CST | 200 |  7.850449s | 127.0.0.1:8080 | GET | /api/Getphoto 
+[Golang]2017-06-15 13:40:30.7021262 +0800 CST | 200 |  6.8453915s | 127.0.0.1:8080 | GET | /api/Getphoto 

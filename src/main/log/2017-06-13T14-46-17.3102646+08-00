@@ -1,0 +1,137 @@
+{DB0:{Driver:sqlite3 Connection:./../database/person23.db Connection2:./../database/person.db Connection3:./../database/idcard.db} Static:E:/dnapersondb/WebRoot LogPath:log Port:8080 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Local:http://127.0.0.1:8080 Public:http://192.168.1.12:6666 Mode:local Server:650000 Updatedb:http://127.0.0.1:9999/api/downloaddb/}
+Listening on 8080....
+[Golang]2017-06-13 14:46:24.3316662 +0800 CST | 304 |  0s | 127.0.0.1:8080 | GET | /js/jquery-1.9.1.min.js 
+Post http://192.168.1.12:6666/api/Uploadperson: dial tcp 192.168.1.12:6666: connectex: No connection could be made because the target machine actively refused it.
+goroutine 5 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb330a0, 0xc042123840, 0xc042000600)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x857de0, 0xc0421dc9f0)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc042102de0, 0xb2ebe0, 0xc0421dc9f0)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).Uploadperson(0xc042102de0)
+	E:/dnapersondb/src/service/card/card.go:630 +0x30e
+reflect.Value.call(0x8ad980, 0xc042102de0, 0x7613, 0x8bb298, 0x4, 0xc042027990, 0x0, 0x0, 0xc04204eb38, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8ad980, 0xc042102de0, 0x7613, 0xc042027990, 0x0, 0x0, 0xc042102de0, 0x7613, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb330a0, 0xc042123840, 0xc042000600, 0xc042123820, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb330a0, 0xc042123840, 0xc042000600, 0xc042123820, 0x1, 0x1)
+	E:/dna
+[Golang]2017-06-13 14:47:05.5290226 +0800 CST | 200 |  1.0100577s | 127.0.0.1:8080 | POST | /api/Uploadperson 
+Error 1264: Out of range value for column 'server' at row 1
+goroutine 5 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb330a0, 0xc0421da900, 0xc0421a4400)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x843400, 0xc04200c580)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc0421dcc30, 0xb2e120, 0xc04200c580)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).Uploadperson(0xc0421dcc30)
+	E:/dnapersondb/src/service/card/card.go:666 +0xd9e
+reflect.Value.call(0x8ad980, 0xc0421dcc30, 0x7613, 0x8bb298, 0x4, 0xc042027990, 0x0, 0x0, 0xc0421a2090, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8ad980, 0xc0421dcc30, 0x7613, 0xc042027990, 0x0, 0x0, 0xc0421dcc30, 0x7613, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb330a0, 0xc0421da900, 0xc0421a4400, 0xc0421da8e0, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb330a0, 0xc0421da900, 0xc0421a4400, 0xc0421da8e0, 0x1, 0x1)
+	E:/dna
+[Golang]2017-06-13 14:47:27.4062739 +0800 CST | 200 |  271.0155ms | 127.0.0.1:8080 | POST | /api/Uploadperson 
+Error 1406: Data too long for column 'code' at row 1
+goroutine 5 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb330a0, 0xc042123f40, 0xc042128a00)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x843400, 0xc04200c740)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc0421035c0, 0xb2e120, 0xc04200c740)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).Uploadperson(0xc0421035c0)
+	E:/dnapersondb/src/service/card/card.go:666 +0xd9e
+reflect.Value.call(0x8ad980, 0xc0421035c0, 0x7613, 0x8bb298, 0x4, 0xc042027990, 0x0, 0x0, 0xc04204ec60, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8ad980, 0xc0421035c0, 0x7613, 0xc042027990, 0x0, 0x0, 0xc0421035c0, 0x7613, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb330a0, 0xc042123f40, 0xc042128a00, 0xc042123f20, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb330a0, 0xc042123f40, 0xc042128a00, 0xc042123f20, 0x1, 0x1)
+	E:/dna
+[Golang]2017-06-13 14:47:34.4286755 +0800 CST | 200 |  270.0155ms | 127.0.0.1:8080 | POST | /api/Uploadperson 
+interface conversion: gorm.sqlCommon is *sql.Tx, not *sql.DB
+goroutine 5 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb330a0, 0xc042234380, 0xc042128c00)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x84f180, 0xc042125700)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+service/card.(*Card).Uploadperson(0xc042103980)
+	E:/dnapersondb/src/service/card/card.go:658 +0x97d
+reflect.Value.call(0x8ad980, 0xc042103980, 0x7613, 0x8bb298, 0x4, 0xc042027990, 0x0, 0x0, 0xc04204ecb8, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8ad980, 0xc042103980, 0x7613, 0xc042027990, 0x0, 0x0, 0xc042103980, 0x7613, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb330a0, 0xc042234380, 0xc042128c00, 0xc042234360, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb330a0, 0xc042234380, 0xc042128c00, 0xc042234360, 0x1, 0x1)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:55 +0xb0
+web/middleware.LoggerMiddleware.func1(0xb330a0, 0xc042234380, 0xc042128c00
+[Golang]2017-06-13 14:47:46.8363852 +0800 CST | 500 |  283.0162ms | 127.0.0.1:8080 | POST | /api/Uploadperson 
+[Golang]2017-06-13 14:47:52.6057152 +0800 CST | 200 |  21.0012ms | 127.0.0.1:8080 | POST | /api/Uploadperson 
+[Golang]2017-06-13 14:48:16.7940987 +0800 CST | 200 |  268.0153ms | 127.0.0.1:8080 | POST | /api/Uploadperson 
+interface conversion: gorm.sqlCommon is *sql.Tx, not *sql.DB
+goroutine 5 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb330a0, 0xc042002f40, 0xc042000700)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x84f180, 0xc04200ac80)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+service/card.(*Card).Uploadperson(0xc042009620)
+	E:/dnapersondb/src/service/card/card.go:658 +0x97d
+reflect.Value.call(0x8ad980, 0xc042009620, 0x7613, 0x8bb298, 0x4, 0xc042027990, 0x0, 0x0, 0xc0420041f0, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8ad980, 0xc042009620, 0x7613, 0xc042027990, 0x0, 0x0, 0xc042009620, 0x7613, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb330a0, 0xc042002f40, 0xc042000700, 0xc042002f20, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb330a0, 0xc042002f40, 0xc042000700, 0xc042002f20, 0x1, 0x1)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:55 +0xb0
+web/middleware.LoggerMiddleware.func1(0xb330a0, 0xc042002f40, 0xc042000700
+[Golang]2017-06-13 14:48:40.4354509 +0800 CST | 500 |  270.0154ms | 127.0.0.1:8080 | POST | /api/Uploadperson 
+[Golang]2017-06-13 14:48:46.3187874 +0800 CST | 200 |  32.0018ms | 127.0.0.1:8080 | POST | /api/Uploadperson 
+[Golang]2017-06-13 14:48:57.430423 +0800 CST | 200 |  278.0159ms | 127.0.0.1:8080 | POST | /api/Uploadperson 
+interface conversion: gorm.sqlCommon is *sql.Tx, not *sql.DB
+goroutine 5 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb330a0, 0xc0422ac040, 0xc042000b00)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x84f180, 0xc04200b100)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+service/card.(*Card).Uploadperson(0xc04229c690)
+	E:/dnapersondb/src/service/card/card.go:658 +0x97d
+reflect.Value.call(0x8ad980, 0xc04229c690, 0x7613, 0x8bb298, 0x4, 0xc042027990, 0x0, 0x0, 0xc0420045d0, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8ad980, 0xc04229c690, 0x7613, 0xc042027990, 0x0, 0x0, 0xc04229c690, 0x7613, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb330a0, 0xc0422ac040, 0xc042000b00, 0xc0422ac020, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb330a0, 0xc0422ac040, 0xc042000b00, 0xc0422ac020, 0x1, 0x1)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:55 +0xb0
+web/middleware.LoggerMiddleware.func1(0xb330a0, 0xc0422ac040, 0xc042000b00
+[Golang]2017-06-13 14:49:06.6389497 +0800 CST | 500 |  285.0163ms | 127.0.0.1:8080 | POST | /api/Uploadperson 
+[Golang]2017-06-13 14:49:18.3986223 +0800 CST | 200 |  21.0012ms | 127.0.0.1:8080 | POST | /api/Uploadperson 
+interface conversion: gorm.sqlCommon is *sql.Tx, not *sql.DB
+goroutine 33 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb330a0, 0xc0421db700, 0xc0421a4c00)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x84f180, 0xc042125e40)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+service/card.(*Card).Uploadperson(0xc0421ddbc0)
+	E:/dnapersondb/src/service/card/card.go:658 +0x97d
+reflect.Value.call(0x8ad980, 0xc0421ddbc0, 0x7613, 0x8bb298, 0x4, 0xc04202b990, 0x0, 0x0, 0xc0421a22a0, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8ad980, 0xc0421ddbc0, 0x7613, 0xc04202b990, 0x0, 0x0, 0xc0421ddbc0, 0x7613, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb330a0, 0xc0421db700, 0xc0421a4c00, 0xc0421db6e0, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb330a0, 0xc0421db700, 0xc0421a4c00, 0xc0421db6e0, 0x1, 0x1)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:55 +0xb0
+web/middleware.LoggerMiddleware.func1(0xb330a0, 0xc0421db700, 0xc0421a4c0
+[Golang]2017-06-13 14:51:21.477662 +0800 CST | 500 |  271.0155ms | 127.0.0.1:8080 | POST | /api/Uploadperson 

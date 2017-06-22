@@ -1,0 +1,60 @@
+{DB0:{Driver:sqlite3 Connection:./../database/person23.db Connection2:./../database/person.db Connection3:./../database/allperson.db} Static:E:/dnapersondb/WebRoot LogPath:log Port:8080 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Local:http://127.0.0.1:8080 Public:http://192.168.1.12:6666 Mode:local Server:650000 Updatedb:http://127.0.0.1:9997/api/downloaddb/ Getcheckserver:http://127.0.0.1:9997/api/getcheckserver}
+Listening on 8080....
+[Golang]2017-06-15 14:05:17.0271391 +0800 CST | 304 |  13.0008ms | 127.0.0.1:8080 | GET | /selectApi.html 
+[Golang]2017-06-15 14:05:28.9698222 +0800 CST | 200 |  3.0002ms | 127.0.0.1:8080 | POST | /api/Selectperandsampbyid 
+[Golang]2017-06-15 14:06:10.9432229 +0800 CST | 200 |  12.0007ms | 127.0.0.1:8080 | POST | /api/Selectperandsampbyid 
+runtime error: index out of range
+goroutine 13 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb360a0, 0xc042346080, 0xc04233c000)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x84dfe0, 0xb5b400)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+service/card.(*Card).Createperandsamp(0xc042338150)
+	E:/dnapersondb/src/service/card/card.go:166 +0x13bc
+reflect.Value.call(0x8afda0, 0xc042338150, 0xa13, 0x8bcfb8, 0x4, 0xc042027990, 0x0, 0x0, 0xc042350010, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8afda0, 0xc042338150, 0xa13, 0xc042027990, 0x0, 0x0, 0xc042338150, 0xa13, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb360a0, 0xc042346080, 0xc04233c000, 0xc042346060, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb360a0, 0xc042346080, 0xc04233c000, 0xc042346060, 0x1, 0x1)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:55 +0xb0
+web/middleware.LoggerMiddleware.func1(0xb360a0, 0xc042346080, 0xc04233c000,
+[Golang]2017-06-15 14:54:13.0030673 +0800 CST | 500 |  10.2955889s | 127.0.0.1:8080 | POST | /api/Createperandsamp 
+[Golang]2017-06-15 14:54:27.0418703 +0800 CST | 304 |  0s | 127.0.0.1:8080 | GET | /selectApi.html 
+runtime error: index out of range
+goroutine 13 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb360a0, 0xc0423be1a0, 0xc042121200)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x84dfe0, 0xb5b400)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+service/card.(*Card).Createperandsamp(0xc0423ba330)
+	E:/dnapersondb/src/service/card/card.go:166 +0x13bc
+reflect.Value.call(0x8afda0, 0xc0423ba330, 0xa13, 0x8bcfb8, 0x4, 0xc042027990, 0x0, 0x0, 0xc0423ce018, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8afda0, 0xc0423ba330, 0xa13, 0xc042027990, 0x0, 0x0, 0xc0423ba330, 0xa13, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb360a0, 0xc0423be1a0, 0xc042121200, 0xc0423be180, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb360a0, 0xc0423be1a0, 0xc042121200, 0xc0423be180, 0x1, 0x1)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:55 +0xb0
+web/middleware.LoggerMiddleware.func1(0xb360a0, 0xc0423be1a0, 0xc042121200,
+[Golang]2017-06-15 14:54:48.7931144 +0800 CST | 500 |  670.0383ms | 127.0.0.1:8080 | POST | /api/Createperandsamp 
+runtime error: index out of range
+goroutine 13 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb360a0, 0xc0421b4c20, 0xc042121300)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x84dfe0, 0xb5b400)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+service/card.(*Card).Createperandsamp(0xc0421c4c90)
+	E:/dnapersondb/src/service/card/card.go:166 +0x13bc
+reflect.Value.call(0x8afda0, 0xc0421c4c90, 0xa13, 0x8bcfb8, 0x4, 0xc042027990, 0x0, 0x0, 0xc04204ed40, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8afda0, 0xc0421c4c90, 0xa13, 0xc042027990, 0x0, 0x0, 0xc0421c4c90, 0xa13, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb360a0, 0xc0421b4c20, 0xc042121300, 0xc0421b4c00, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb360a0, 0xc0421b4c20, 0xc042121300, 0xc0421b4c00, 0x1, 0x1)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:55 +0xb0
+web/middleware.LoggerMiddleware.func1(0xb360a0, 0xc0421b4c20, 0xc042121300,
+[Golang]2017-06-15 14:55:12.8504904 +0800 CST | 500 |  699.04ms | 127.0.0.1:8080 | POST | /api/Createperandsamp 

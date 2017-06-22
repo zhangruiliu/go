@@ -1,0 +1,22 @@
+{DB0:{Driver:sqlite3 Connection:./../database/person23.db Connection2:./../database/person.db Connection3:./../database/allperson.db} Static:E:/dnapersondb/WebRoot LogPath:log Port:8080 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Local:http://127.0.0.1:8080 Public:http://127.0.0.1:8088 Mode:local Server:650000 Updatedb:http://127.0.0.1:9999/api/downloaddb/}
+Listening on 8080....
+[Golang]2017-06-13 10:34:57.5997545 +0800 CST | 304 |  4.0002ms | 127.0.0.1:8080 | GET | /selectApi.html 
+zip: not a valid zip file
+goroutine 8 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb684a0, 0xc042190740, 0xc0421b2000)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xef
+panic(0x8e9580, 0xc0421686e0)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc0421aa270, 0xb63520, 0xc0421686e0)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).Getcheckpersonfile(0xc0421aa270)
+	E:/dnapersondb/src/service/card/card.go:1152 +0x646
+reflect.Value.call(0x9538a0, 0xc0421aa270, 0x2613, 0x9613f8, 0x4, 0xc04202d820, 0x0, 0x0, 0xc042004bf8, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x9538a0, 0xc0421aa270, 0x2613, 0xc04202d820, 0x0, 0x0, 0xc0421aa270, 0x2613, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb684a0, 0xc042190740, 0xc0421b2000, 0xc042190720, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x5a0
+web/middleware.RecoveryMiddleware.func1(0xb684a0, 0xc042190740, 0xc0421b2000, 0xc042190720, 0x1, 0x1)
+
+[Golang]2017-06-13 10:35:09.9434605 +0800 CST | 200 |  46.1316386s | 127.0.0.1:8080 | POST | /api/Getcheckpersonfile 

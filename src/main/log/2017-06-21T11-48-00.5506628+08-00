@@ -1,0 +1,12 @@
+{DB0:{Driver:sqlite3 Connection:./../database/person23.db Connection2:./../database/person.db Connection3:./../database/allperson.db} Static:D:/dnapersondb/WebRoot LogPath:log Port:8080 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Local:http://127.0.0.1:8080 Public:http://192.168.1.12:6666 Mode:local Server:650000 Updatedb:http://127.0.0.1:9997/api/downloaddb/ Getcheckserver:http://127.0.0.1:9997/api/getcheckserver}
+Listening on 8080....
+[Golang]2017-06-21 11:48:03.7298446 +0800 CST | 500 |  4.0002ms | 127.0.0.1:8080 | GET | / 
+[Golang]2017-06-21 11:48:03.7588463 +0800 CST | 500 |  2.0001ms | 127.0.0.1:8080 | GET | /favicon.ico 
+[Golang]2017-06-21 11:48:06.0559776 +0800 CST | 500 |  1.0001ms | 127.0.0.1:8080 | GET | / 
+[Golang]2017-06-21 11:48:06.1089807 +0800 CST | 500 |  0s | 127.0.0.1:8080 | GET | /favicon.ico 
+[Golang]2017-06-21 11:48:06.2399882 +0800 CST | 500 |  2.0001ms | 127.0.0.1:8080 | GET | / 
+[Golang]2017-06-21 11:48:06.2699899 +0800 CST | 500 |  0s | 127.0.0.1:8080 | GET | /favicon.ico 
+[Golang]2017-06-21 11:48:06.3899967 +0800 CST | 500 |  0s | 127.0.0.1:8080 | GET | / 
+[Golang]2017-06-21 11:48:06.4189984 +0800 CST | 500 |  0s | 127.0.0.1:8080 | GET | /favicon.ico 
+[Golang]2017-06-21 11:48:06.5180041 +0800 CST | 500 |  3.0001ms | 127.0.0.1:8080 | GET | / 
+[Golang]2017-06-21 11:48:06.552006 +0800 CST | 500 |  8.0005ms | 127.0.0.1:8080 | GET | /favicon.ico 

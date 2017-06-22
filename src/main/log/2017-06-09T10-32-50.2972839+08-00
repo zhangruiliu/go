@@ -1,0 +1,25 @@
+{DB0:{Driver:sqlite3 Connection:./../database/person23.db Connection2:./../database/person23.db Connection3:./../database/allperson.db} Static:E:/dnapersondb/WebRoot LogPath:log Port:8080 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Offline:http://127.0.0.1:8080 Online:http://192.168.1.12:9999 Mode:offline Server:650000 Updatedb:http://127.0.0.1:9999/api/downloaddb/}
+Listening on 8080....
+[Golang]2017-06-09 10:32:55.735595 +0800 CST | 304 |  1ms | 127.0.0.1:8080 | GET | /selectApi.html 
+[Golang]2017-06-09 10:32:55.7525959 +0800 CST | 304 |  1.0001ms | 127.0.0.1:8080 | GET | /js/dict.js 
+[Golang]2017-06-09 10:32:56.3746315 +0800 CST | 304 |  1.0001ms | 127.0.0.1:8080 | GET | /selectApi.html 
+[Golang]2017-06-09 10:32:56.5676425 +0800 CST | 304 |  1.0001ms | 127.0.0.1:8080 | GET | /selectApi.html 
+[Golang]2017-06-09 10:32:56.7316519 +0800 CST | 304 |  1.0001ms | 127.0.0.1:8080 | GET | /selectApi.html 
+人员或样本id为空
+goroutine 22 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb2f060, 0xc0420025e0, 0xc042122f00)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x840220, 0xc04200c380)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc042008630, 0xb2a120, 0xc04200c380)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).DeletePersonSampling(0xc042008630)
+	E:/dnapersondb/src/service/card/card.go:697 +0x207
+reflect.Value.call(0x8a88e0, 0xc042008630, 0x1213, 0x8b7ebc, 0x4, 0xc04202b990, 0x0, 0x0, 0xc042004048, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8a88e0, 0xc042008630, 0x1213, 0xc04202b990, 0x0, 0x0, 0xc042008630, 0x1213, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb2f060, 0xc0420025e0, 0xc042122f00, 0xc0420025c0, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb2f060, 0xc0420025e0, 0xc042122f00, 0xc0420025c0, 0x1, 0x1
+[Golang]2017-06-09 10:34:24.7366855 +0800 CST | 200 |  1.0001ms | 127.0.0.1:8080 | POST | /api/DeletePersonSampling 

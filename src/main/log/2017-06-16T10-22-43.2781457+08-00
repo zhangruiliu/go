@@ -1,0 +1,21 @@
+{DB0:{Driver:mysql Connection:root:root@tcp(192.168.1.19:3306)/limsxjbazhou?charset=utf8&parseTime=true&loc=Local Connection2: Connection3:} Static:E:/dnapersondb/WebRoot LogPath:log Port:8088 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Local:http://127.0.0.1:8080 Public:http://127.0.0.1:8088 Mode:public Server:650000 Updatedb:http://127.0.0.1:9997/api/downloaddb/ Getcheckserver:http://127.0.0.1:9997/api/getcheckserver}
+Listening on 8088....
+Error 1406: Data too long for column 'photo' at row 1
+goroutine 21 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb6a4a0, 0xc0421b43e0, 0xc042122d00)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xef
+panic(0x8ed4a0, 0xc042003f80)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc0421adc50, 0xb66460, 0xc042003f80)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/api.(*Api).Uploadperson(0xc0421adc50)
+	E:/dnapersondb/src/service/api/api.go:683 +0x13ed
+reflect.Value.call(0x94da80, 0xc0421adc50, 0x4213, 0x962cb8, 0x4, 0xc04202d820, 0x0, 0x0, 0xc042050bc0, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x94da80, 0xc0421adc50, 0x4213, 0xc04202d820, 0x0, 0x0, 0xc0421adc50, 0x4213, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb6a4a0, 0xc0421b43e0, 0xc042122d00, 0xc0421b43c0, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x5a0
+web/middleware.RecoveryMiddleware.func1(0xb6a4a0, 0xc0421b43e0, 0xc042122d00, 0xc0421b43c0, 0x1, 0x1)
+	E:/dnape
+[Golang]2017-06-16 10:22:48.9374694 +0800 CST | 200 |  12.5617185s | 127.0.0.1:8088 | POST | /api/Uploadperson 

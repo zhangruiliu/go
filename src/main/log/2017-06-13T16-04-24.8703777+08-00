@@ -1,0 +1,4 @@
+{DB0:{Driver:sqlite3 Connection:./../database/person23.db Connection2:./../database/person.db Connection3:./../database/idcard.db} Static:E:/dnapersondb/WebRoot LogPath:log Port:8080 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Local:http://127.0.0.1:8080 Public:http://192.168.1.12:6666 Mode:local Server:650000 Updatedb:http://127.0.0.1:9999/api/downloaddb/}
+Listening on 8080....
+[Golang]2017-06-13 16:04:27.8805499 +0800 CST | 200 |  15.0008ms | 127.0.0.1:8080 | POST | /api/Createperandsamp 
+[Golang]2017-06-13 16:04:36.4730413 +0800 CST | 200 |  850.0487ms | 127.0.0.1:8080 | POST | /api/Createperandsamp 

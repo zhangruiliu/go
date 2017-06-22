@@ -1,0 +1,8 @@
+{DB0:{Driver:mysql Connection:root:zdb15@tcp(192.168.1.66:3306)/ht0611?charset=utf8&parseTime=true&loc=Local Connection2: Connection3:} Static:D:/dnapersondb/WebRoot LogPath:log Port:8080 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Local:http://127.0.0.1:8088 Public:http://127.0.0.1:8080 Mode:public Server:650000 Updatedb:http://127.0.0.1:9997/api/downloaddb/ Getcheckserver:http://127.0.0.1:9997/api/getcheckserver}
+Listening on 8080....
+[Golang]2017-06-21 11:32:03.7219353 +0800 CST | 200 |  22.5432894s | 127.0.0.1:8080 | POST | /api/Uploadperson 
+[Golang]2017-06-21 11:33:44.1576799 +0800 CST | 200 |  8.8505062s | 127.0.0.1:8080 | POST | /api/Uploadperson 
+[Golang]2017-06-21 11:34:08.2540581 +0800 CST | 200 |  4.6072635s | 127.0.0.1:8080 | POST | /api/Uploadperson 
+[Golang]2017-06-21 11:34:42.9140406 +0800 CST | 200 |  6.8383911s | 127.0.0.1:8080 | POST | /api/Uploadperson 
+[Golang]2017-06-21 11:36:35.1364593 +0800 CST | 200 |  18.2030412s | 127.0.0.1:8080 | POST | /api/Uploadperson 
+[Golang]2017-06-21 11:38:46.1089505 +0800 CST | 200 |  31.5528047s | 127.0.0.1:8080 | POST | /api/Uploadperson 

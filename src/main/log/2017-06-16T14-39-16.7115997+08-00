@@ -1,0 +1,22 @@
+{DB0:{Driver:sqlite3 Connection:./../database/person23.db Connection2:./../database/person.db Connection3:./../database/allperson.db} Static:E:/dnapersondb/WebRoot LogPath:log Port:8080 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Local:http://127.0.0.1:8080 Public:http://127.0.0.1:8088 Mode:local Server:650000 Updatedb:http://127.0.0.1:9997/api/downloaddb/ Getcheckserver:http://127.0.0.1:9997/api/getcheckserver}
+Listening on 8080....
+[Golang]2017-06-16 14:39:27.4842159 +0800 CST | 304 |  2.0001ms | 127.0.0.1:8080 | GET | /selectApi.html 
+查询错误
+goroutine 22 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb370a0, 0xc0421ce080, 0xc042120e00)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x8459c0, 0xc0421cc7f0)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc0421c40c0, 0xb32120, 0xc0421cc7f0)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).GetpersonCount(0xc0421c40c0)
+	E:/dnapersondb/src/service/card/card.go:1063 +0x151
+reflect.Value.call(0x8b11a0, 0xc0421c40c0, 0x3213, 0x8bdc38, 0x4, 0xc04202b990, 0x0, 0x0, 0xc0421dc030, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8b11a0, 0xc0421c40c0, 0x3213, 0xc04202b990, 0x0, 0x0, 0xc0421c40c0, 0x3213, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb370a0, 0xc0421ce080, 0xc042120e00, 0xc0421ce060, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb370a0, 0xc0421ce080, 0xc042120e00, 0xc0421ce060, 0x1, 0x1)
+	E:
+[Golang]2017-06-16 14:39:40.8979831 +0800 CST | 200 |  3.0002ms | 127.0.0.1:8080 | POST | /api/GetpersonCount 

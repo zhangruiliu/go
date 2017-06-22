@@ -1,0 +1,58 @@
+{DB0:{Driver:sqlite3 Connection:./../database/person23.db Connection2:./../database/person23.db Connection3:./../database/allperson.db} Static:E:/dnapersondb/WebRoot LogPath:log Port:8080 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Offline:http://127.0.0.1:8080 Online:http://192.168.1.12:9999 Mode:offline Server:650000 Updatedb:http://127.0.0.1:9999/api/downloaddb/}
+Listening on 8080....
+http: named cookie not present
+goroutine 8 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb2f060, 0xc042194640, 0xc042107100)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x8400e0, 0xc04216e110)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc0421ae060, 0xb2a120, 0xc04216e110)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).DeletePersonSampling(0xc0421ae060)
+	E:/dnapersondb/src/service/card/card.go:701 +0x292
+reflect.Value.call(0x8a8720, 0xc0421ae060, 0x1213, 0x8b7cfc, 0x4, 0xc04202b990, 0x0, 0x0, 0xc042004be8, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8a8720, 0xc0421ae060, 0x1213, 0xc04202b990, 0x0, 0x0, 0xc0421ae060, 0x1213, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb2f060, 0xc042194640, 0xc042107100, 0xc042194620, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb2f060, 0xc042194640, 0xc042107100, 0xc042194620, 0x1, 0x1)
+[Golang]2017-06-09 10:36:11.2467776 +0800 CST | 200 |  1ms | 127.0.0.1:8080 | POST | /api/DeletePersonSampling 
+[Golang]2017-06-09 10:36:31.4639339 +0800 CST | 200 |  142.0081ms | 127.0.0.1:8080 | GET | / 
+[Golang]2017-06-09 10:36:31.6419441 +0800 CST | 200 |  11.0006ms | 127.0.0.1:8080 | GET | /login.html 
+[Golang]2017-06-09 10:36:31.6809463 +0800 CST | 200 |  10.0006ms | 127.0.0.1:8080 | GET | /css/login.css 
+[Golang]2017-06-09 10:36:31.6839465 +0800 CST | 200 |  51.0029ms | 127.0.0.1:8080 | GET | /images/jinghui.png 
+[Golang]2017-06-09 10:36:37.7382928 +0800 CST | 200 |  5.0003ms | 127.0.0.1:8080 | POST | /api/Login 
+[Golang]2017-06-09 10:36:37.7492934 +0800 CST | 200 |  1.0001ms | 127.0.0.1:8080 | GET | /lurujiemian.html 
+[Golang]2017-06-09 10:36:37.7782951 +0800 CST | 200 |  0s | 127.0.0.1:8080 | GET | /css/menu.css 
+[Golang]2017-06-09 10:36:37.7782951 +0800 CST | 200 |  1ms | 127.0.0.1:8080 | GET | /js/jquery.params.js 
+[Golang]2017-06-09 10:36:37.7792951 +0800 CST | 200 |  7.0004ms | 127.0.0.1:8080 | GET | /js/My97DatePicker/WdatePicker.js 
+[Golang]2017-06-09 10:36:37.7802952 +0800 CST | 200 |  12.0007ms | 127.0.0.1:8080 | GET | /js/jquery.step.js 
+[Golang]2017-06-09 10:36:37.7722947 +0800 CST | 200 |  21.0012ms | 127.0.0.1:8080 | GET | /css/index.css 
+[Golang]2017-06-09 10:36:37.7752949 +0800 CST | 200 |  18.001ms | 127.0.0.1:8080 | GET | /css/jquery.step.css 
+[Golang]2017-06-09 10:36:37.8282979 +0800 CST | 200 |  0s | 127.0.0.1:8080 | GET | /js/My97DatePicker/skin/WdatePicker.css 
+[Golang]2017-06-09 10:36:37.916303 +0800 CST | 200 |  1ms | 127.0.0.1:8080 | GET | /js/My97DatePicker/My97DatePicker.htm 
+[Golang]2017-06-09 10:36:37.9363041 +0800 CST | 200 |  1.0001ms | 127.0.0.1:8080 | GET | /js/My97DatePicker/config.js 
+[Golang]2017-06-09 10:36:37.9383042 +0800 CST | 200 |  1.0001ms | 127.0.0.1:8080 | GET | /js/My97DatePicker/calendar.js 
+[Golang]2017-06-09 10:36:37.9473047 +0800 CST | 200 |  2.0001ms | 127.0.0.1:8080 | GET | /js/My97DatePicker/lang/zh-cn.js 
+[Golang]2017-06-09 10:36:37.9483048 +0800 CST | 200 |  2.0001ms | 127.0.0.1:8080 | GET | /js/My97DatePicker/skin/default/datepicker.css 
+[Golang]2017-06-09 10:36:37.9493048 +0800 CST | 200 |  1.0001ms | 127.0.0.1:8080 | GET | /js/My97DatePicker/skin/whyGreen/datepicker.css 
+[Golang]2017-06-09 10:36:37.9943074 +0800 CST | 200 |  1.0001ms | 127.0.0.1:8080 | GET | /js/My97DatePicker/skin/default/img.gif 
+unrecognized token: "20f40ab3c17b4da2bda3ba10313527c2"
+goroutine 52 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb2f060, 0xc042002960, 0xc042000700)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x87b960, 0xc042002f00)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc042044a20, 0xb2c260, 0xc042002f00)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).DeletePersonSampling(0xc042044a20)
+	E:/dnapersondb/src/service/card/card.go:703 +0x74e
+reflect.Value.call(0x8a8720, 0xc042044a20, 0x1213, 0x8b7cfc, 0x4, 0xc042027990, 0x0, 0x0, 0xc0423ca030, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8a8720, 0xc042044a20, 0x1213, 0xc042027990, 0x0, 0x0, 0xc042044a20, 0x1213, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb2f060, 0xc042002960, 0xc042000700, 0xc042002940, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb2f060, 0xc042002960, 0xc042000700, 0xc042002940, 0x1, 0x1
+[Golang]2017-06-09 10:36:41.4425046 +0800 CST | 200 |  1.0001ms | 127.0.0.1:8080 | POST | /api/DeletePersonSampling 

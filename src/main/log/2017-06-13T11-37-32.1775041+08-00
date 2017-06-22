@@ -1,0 +1,22 @@
+{DB0:{Driver:sqlite3 Connection:./../database/person23.db Connection2:./../database/person.db Connection3:./../database/idcard.db} Static:E:/dnapersondb/WebRoot LogPath:log Port:8080 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Local:http://127.0.0.1:8080 Public:http://127.0.0.1:8088 Mode:local Server:650000 Updatedb:http://127.0.0.1:9999/api/downloaddb/}
+Listening on 8080....
+[Golang]2017-06-13 11:37:34.5856418 +0800 CST | 404 |  0s | 127.0.0.1:8080 | GET | /Getphoto 
+Get c:\Users\Administrator\Desktop\Debug\Debug\id\zp.bmp: unsupported protocol scheme "c"
+goroutine 21 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb330a0, 0xc042002740, 0xc042126d00)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x857c00, 0xc04203e540)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc04203e270, 0xb2ebe0, 0xc04203e540)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).Getphoto(0xc04203e270)
+	E:/dnapersondb/src/service/card/card.go:1404 +0x6f
+reflect.Value.call(0x8ad7a0, 0xc04203e270, 0x2e13, 0x8bb0b8, 0x4, 0xc04202b990, 0x0, 0x0, 0xc042004050, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8ad7a0, 0xc04203e270, 0x2e13, 0xc04202b990, 0x0, 0x0, 0xc04203e270, 0x2e13, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb330a0, 0xc042002740, 0xc042126d00, 0xc042002720, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb330a0, 0xc042002740, 0xc042126d00, 0xc042002720, 0x1, 0x1)
+	E:/dnaper
+[Golang]2017-06-13 11:37:42.8841164 +0800 CST | 200 |  1.0001ms | 127.0.0.1:8080 | GET | /api/Getphoto 

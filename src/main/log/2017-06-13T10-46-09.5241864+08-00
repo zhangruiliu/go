@@ -1,0 +1,21 @@
+{DB0:{Driver:sqlite3 Connection:./../database/person23.db Connection2:./../database/person.db Connection3:./../database/allperson.db} Static:E:/dnapersondb/WebRoot LogPath:log Port:8080 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Local:http://127.0.0.1:8080 Public:http://127.0.0.1:8088 Mode:local Server:650000 Updatedb:http://127.0.0.1:9999/api/downloaddb/}
+Listening on 8080....
+rename ./../database/person.db ./../database/person.db: The system cannot find the file specified.
+goroutine 8 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb350a0, 0xc042194620, 0xc042107100)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x846100, 0xc0421ea040)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc0421ae060, 0xb30d20, 0xc0421ea040)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).Getcheckpersonfile(0xc0421ae060)
+	E:/dnapersondb/src/service/card/card.go:1161 +0x57c
+reflect.Value.call(0x8ae980, 0xc0421ae060, 0x2613, 0x8bc4d8, 0x4, 0xc04202b990, 0x0, 0x0, 0xc042004be8, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8ae980, 0xc0421ae060, 0x2613, 0xc04202b990, 0x0, 0x0, 0xc0421ae060, 0x2613, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb350a0, 0xc042194620, 0xc042107100, 0xc042194600, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb350a0, 0xc042194620, 0xc042107100, 0xc042194600, 0x1, 0x1)
+
+[Golang]2017-06-13 10:46:17.158623 +0800 CST | 200 |  292.0167ms | 127.0.0.1:8080 | POST | /api/Getcheckpersonfile 

@@ -1,0 +1,18 @@
+{DB0:{Driver:sqlite3 Connection:./../database/person23.db Connection2:./../database/person.db Connection3:./../database/allperson.db} Static:D:/dnapersondb/WebRoot LogPath:log Port:8080 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Local:http://127.0.0.1:8080 Public:http://192.168.1.12:6666 Mode:local Server:650000 Updatedb:http://127.0.0.1:9997/api/downloaddb/ Getcheckserver:http://127.0.0.1:9997/api/getcheckserver}
+Listening on 8080....
+[Golang]2017-06-21 11:41:18.9086902 +0800 CST | 500 |  1ms | 127.0.0.1:8080 | GET | /selectAPI.html 
+[Golang]2017-06-21 11:41:18.9476924 +0800 CST | 500 |  0s | 127.0.0.1:8080 | GET | /favicon.ico 
+[Golang]2017-06-21 11:41:21.5908436 +0800 CST | 500 |  0s | 127.0.0.1:8080 | GET | /selectAPI.html 
+[Golang]2017-06-21 11:41:21.6138449 +0800 CST | 500 |  1ms | 127.0.0.1:8080 | GET | /favicon.ico 
+[Golang]2017-06-21 11:41:32.1904498 +0800 CST | 500 |  1.0001ms | 127.0.0.1:8080 | GET | /selectAPI.html 
+[Golang]2017-06-21 11:41:32.2144512 +0800 CST | 500 |  0s | 127.0.0.1:8080 | GET | /favicon.ico 
+[Golang]2017-06-21 11:41:32.3474588 +0800 CST | 500 |  0s | 127.0.0.1:8080 | GET | /selectAPI.html 
+[Golang]2017-06-21 11:41:32.3674599 +0800 CST | 500 |  1.0001ms | 127.0.0.1:8080 | GET | /favicon.ico 
+[Golang]2017-06-21 11:41:32.4924671 +0800 CST | 500 |  0s | 127.0.0.1:8080 | GET | /selectAPI.html 
+[Golang]2017-06-21 11:41:32.5114682 +0800 CST | 500 |  1ms | 127.0.0.1:8080 | GET | /favicon.ico 
+[Golang]2017-06-21 11:41:32.6214745 +0800 CST | 500 |  7.0004ms | 127.0.0.1:8080 | GET | /selectAPI.html 
+[Golang]2017-06-21 11:41:32.647476 +0800 CST | 500 |  0s | 127.0.0.1:8080 | GET | /favicon.ico 
+[Golang]2017-06-21 11:41:36.3556881 +0800 CST | 500 |  0s | 127.0.0.1:8080 | GET | / 
+[Golang]2017-06-21 11:41:36.3936902 +0800 CST | 500 |  6.0004ms | 127.0.0.1:8080 | GET | /favicon.ico 
+[Golang]2017-06-21 11:41:48.1073602 +0800 CST | 500 |  2.0001ms | 127.0.0.1:8080 | GET | / 
+[Golang]2017-06-21 11:41:48.1743641 +0800 CST | 500 |  0s | 127.0.0.1:8080 | GET | /favicon.ico 

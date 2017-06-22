@@ -1,0 +1,20 @@
+{DB0:{Driver:sqlite3 Connection:./../database/person23.db Connection2:./../database/person.db Connection3:./../database/idcard.db} Static:E:/dnapersondb/WebRoot LogPath:log Port:8080 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Local:http://127.0.0.1:8080 Public:http://192.168.1.12:6666 Mode:local Server:650000 Updatedb:http://127.0.0.1:9999/api/downloaddb/}
+Listening on 8080....
+dial tcp 192.168.1.12:6666: connectex: No connection could be made because the target machine actively refused it.
+goroutine 34 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb340a0, 0xc0421b8140, 0xc0421d8000)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x8575c0, 0xc04219f360)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc0421ba1e0, 0xb2f4e0, 0xc04219f360)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).Geturlisornotonline(0xc0421ba1e0)
+	E:/dnapersondb/src/service/card/card.go:755 +0x18d
+reflect.Value.call(0x8adca0, 0xc0421ba1e0, 0x3213, 0x8bb5b8, 0x4, 0xc042027990, 0x0, 0x0, 0xc0421bc038, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8adca0, 0xc0421ba1e0, 0x3213, 0xc042027990, 0x0, 0x0, 0xc0421ba1e0, 0x3213, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb340a0, 0xc0421b8140, 0xc0421d8000, 0xc0421b8120, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb340a0, 0xc0421b8140, 0xc0421d8000, 0xc0421b8120, 0x1, 0x1)
+[Golang]2017-06-13 17:21:15.5400929 +0800 CST | 200 |  1.0170582s | 127.0.0.1:8080 | POST | /api/Geturlisornotonline 

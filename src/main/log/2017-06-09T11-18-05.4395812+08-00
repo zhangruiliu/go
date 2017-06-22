@@ -1,0 +1,59 @@
+{DB0:{Driver:sqlite3 Connection:./../database/person23.db Connection2:./../database/person23.db Connection3:./../database/allperson.db} Static:E:/dnapersondb/WebRoot LogPath:log Port:8080 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Local:http://127.0.0.1:8080 Public:http://192.168.1.12:6666 Mode:local Server:650000 Updatedb:http://127.0.0.1:9999/api/downloaddb/}
+Listening on 8080....
+身份证号不能为空
+goroutine 8 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb31060, 0xc04218e600, 0xc042101100)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x841860, 0xc0421afd60)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc0421aa060, 0xb2c120, 0xc0421afd60)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).Createperandsamp(0xc0421aa060)
+	E:/dnapersondb/src/service/card/card.go:98 +0x1acc
+reflect.Value.call(0x8aa400, 0xc0421aa060, 0xa13, 0x8b95c1, 0x4, 0xc04202b990, 0x0, 0x0, 0xc042004be8, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8aa400, 0xc0421aa060, 0xa13, 0xc04202b990, 0x0, 0x0, 0xc0421aa060, 0xa13, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb31060, 0xc04218e600, 0xc042101100, 0xc04218e5e0, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb31060, 0xc04218e600, 0xc042101100, 0xc04218e5e0, 0x1, 0x1)
+	E:/dn
+[Golang]2017-06-09 11:18:08.8877784 +0800 CST | 200 |  4.0002ms | 127.0.0.1:8080 | POST | /api/Createperandsamp 
+身份证号不能为空
+goroutine 8 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb31060, 0xc04218f9c0, 0xc042101600)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x841860, 0xc0421dbf40)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc0421abe90, 0xb2c120, 0xc0421dbf40)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).Createperandsamp(0xc0421abe90)
+	E:/dnapersondb/src/service/card/card.go:98 +0x1acc
+reflect.Value.call(0x8aa400, 0xc0421abe90, 0xa13, 0x8b95c1, 0x4, 0xc04202b990, 0x0, 0x0, 0xc042004da0, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8aa400, 0xc0421abe90, 0xa13, 0xc04202b990, 0x0, 0x0, 0xc0421abe90, 0xa13, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb31060, 0xc04218f9c0, 0xc042101600, 0xc04218f9a0, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb31060, 0xc04218f9c0, 0xc042101600, 0xc04218f9a0, 0x1, 0x1)
+	E:/dn
+[Golang]2017-06-09 11:18:28.7229129 +0800 CST | 200 |  3.0002ms | 127.0.0.1:8080 | POST | /api/Createperandsamp 
+身份证号不能为空
+goroutine 8 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xb31060, 0xc0421ec540, 0xc042101d00)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xad
+panic(0x841860, 0xc04220a0c0)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc0421d9a10, 0xb2c120, 0xc04220a0c0)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).Createperandsamp(0xc0421d9a10)
+	E:/dnapersondb/src/service/card/card.go:98 +0x1acc
+reflect.Value.call(0x8aa400, 0xc0421d9a10, 0xa13, 0x8b95c1, 0x4, 0xc04202b990, 0x0, 0x0, 0xc042004f40, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x8aa400, 0xc0421d9a10, 0xa13, 0xc04202b990, 0x0, 0x0, 0xc0421d9a10, 0xa13, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xb31060, 0xc0421ec540, 0xc042101d00, 0xc0421ec520, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x3ae
+web/middleware.RecoveryMiddleware.func1(0xb31060, 0xc0421ec540, 0xc042101d00, 0xc0421ec520, 0x1, 0x1)
+	E:/dn
+[Golang]2017-06-09 11:19:22.0749644 +0800 CST | 200 |  2.0002ms | 127.0.0.1:8080 | POST | /api/Createperandsamp 

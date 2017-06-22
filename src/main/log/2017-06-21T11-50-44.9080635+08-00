@@ -1,0 +1,48 @@
+{DB0:{Driver:sqlite3 Connection:./../database/person23.db Connection2:./../database/person.db Connection3:./../database/allperson.db} Static:E:/dnapersondb/WebRoot LogPath:log Port:8080 Lims1LoginUrl:http://127.0.0.1:7070/dnalims/svc/login SqlTmplPath:Sqls CollectAgencyName:新疆公安局 CollectAgencyCode:650000123654 Code:001 Local:http://127.0.0.1:8080 Public:http://192.168.1.12:6666 Mode:local Server:650000 Updatedb:http://127.0.0.1:9997/api/downloaddb/ Getcheckserver:http://127.0.0.1:9997/api/getcheckserver}
+Listening on 8080....
+[Golang]2017-06-21 11:50:45.5861022 +0800 CST | 200 |  212.0122ms | 127.0.0.1:8080 | GET | / 
+[Golang]2017-06-21 11:50:45.8191156 +0800 CST | 200 |  18.001ms | 127.0.0.1:8080 | GET | /js/jquery-1.9.1.min.js 
+[Golang]2017-06-21 11:50:45.9041204 +0800 CST | 404 |  0s | 127.0.0.1:8080 | GET | /favicon.ico 
+[Golang]2017-06-21 11:50:45.9241216 +0800 CST | 200 |  1ms | 127.0.0.1:8080 | GET | /login.html 
+[Golang]2017-06-21 11:50:45.9621238 +0800 CST | 200 |  2.0001ms | 127.0.0.1:8080 | GET | /css/login.css 
+[Golang]2017-06-21 11:50:45.9631238 +0800 CST | 200 |  1.0001ms | 127.0.0.1:8080 | GET | /js/dict.js 
+[Golang]2017-06-21 11:50:45.9681241 +0800 CST | 200 |  102.0058ms | 127.0.0.1:8080 | GET | /images/jinghui.png 
+[Golang]2017-06-21 11:51:04.3091731 +0800 CST | 200 |  6.0004ms | 127.0.0.1:8080 | GET | /selectAPI.html 
+Post http://192.168.1.12:6666/api/Uploadperson: dial tcp 192.168.1.12:6666: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+goroutine 22 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xbb0860, 0xc0423463a0, 0xc0421cf900)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xef
+panic(0x92b1a0, 0xc042044450)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc04234c510, 0xbac0a0, 0xc042044450)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).Uploadperson(0xc04234c510)
+	E:/dnapersondb/src/service/card/card.go:725 +0x3e0
+reflect.Value.call(0x988480, 0xc04234c510, 0x8213, 0x99524f, 0x4, 0xc0423bf820, 0x0, 0x0, 0xc042354048, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x988480, 0xc04234c510, 0x8213, 0xc0423bf820, 0x0, 0x0, 0xc04234c510, 0x8213, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xbb0860, 0xc0423463a0, 0xc0421cf900, 0xc042346380, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x5a0
+web/middleware.RecoveryMiddleware.func1(0xbb0860, 0xc0423463a0, 0xc0421cf900, 0xc042346380, 0x1, 0x1)
+	E:/dn
+[Golang]2017-06-21 11:51:14.849776 +0800 CST | 200 |  38.5312039s | 127.0.0.1:8080 | POST | /api/Uploadperson 
+Error 1146: Table 'ht0611.photo' doesn't exist
+goroutine 66 [running]:
+web/middleware.RecoveryMiddleware.func1.1(0xbb0860, 0xc0420027e0, 0xc042000500)
+	E:/dnapersondb/src/web/middleware/recoveryMiddleware.go:24 +0xef
+panic(0x915340, 0xc04207a360)
+	C:/go64/src/runtime/panic.go:489 +0x2dd
+web/httpcontext.(*HttpContext).CheckWrite(0xc042044660, 0xbab5a0, 0xc04207a360)
+	E:/dnapersondb/src/web/httpcontext/ctx.go:56 +0x2e7
+service/card.(*Card).Uploadperson(0xc042044660)
+	E:/dnapersondb/src/service/card/card.go:770 +0x1043
+reflect.Value.call(0x988480, 0xc042044660, 0x8213, 0x99524f, 0x4, 0xc0422bb820, 0x0, 0x0, 0xc042454020, 0x13, ...)
+	C:/go64/src/reflect/value.go:434 +0x926
+reflect.Value.Call(0x988480, 0xc042044660, 0x8213, 0xc0422bb820, 0x0, 0x0, 0xc042044660, 0x8213, 0x0)
+	C:/go64/src/reflect/value.go:302 +0xab
+register.MakeTypeHttpRouter.func1(0xbb0860, 0xc0420027e0, 0xc042000500, 0xc0420027c0, 0x1, 0x1)
+	E:/dnapersondb/src/register/util.go:31 +0x5a0
+web/middleware.RecoveryMiddleware.func1(0xbb0860, 0xc0420027e0, 0xc042000500, 0xc0420027c0, 0x1, 0x1)
+	E:/d
+[Golang]2017-06-21 12:24:48.8539705 +0800 CST | 200 |  3.3621923s | 127.0.0.1:8080 | POST | /api/Uploadperson 
